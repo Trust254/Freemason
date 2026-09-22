@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Join Freemason Membership Today — Freemasonry history, values, membership enquiries and application management.">
+<title>Join Freemason Membership Today</title>
+<style>
+:root{--bg:#05070b;--panel:#0e1520;--panel2:#141d2a;--gold:#d4af37;--gold2:#f4d56c;--text:#f8f5ea;--muted:#a7afbc;--line:rgba(212,175,55,.25);--green:#35d39e;--red:#ff7373;--shadow:0 25px 70px rgba(0,0,0,.48)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 12% 0,rgba(212,175,55,.12),transparent 28%),radial-gradient(circle at 90% 18%,rgba(70,90,170,.13),transparent 30%),var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.55}a{text-decoration:none;color:inherit}button,input,select,textarea{font:inherit}button{cursor:pointer}
+.container{width:min(1180px,92%);margin:auto}header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(5,7,11,.88);backdrop-filter:blur(17px);border-bottom:1px solid rgba(255,255,255,.07)}
+.nav{height:74px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;font-weight:900}.mark{width:44px;height:44px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold2);font-size:23px;box-shadow:0 0 25px rgba(212,175,55,.14)}.links{display:flex;gap:20px;color:#d9dce3;font-size:14px}.links a:hover{color:var(--gold2)}.navbtns{display:flex;gap:8px}.menu{display:none;background:none;border:0;color:white;font-size:28px}
+.btn{border:0;border-radius:11px;padding:11px 17px;font-weight:800;display:inline-flex;justify-content:center;align-items:center;gap:8px;transition:.25s}.btn:hover{transform:translateY(-2px)}.gold{background:linear-gradient(135deg,var(--gold2),#a87a12);color:#111;box-shadow:0 10px 30px rgba(212,175,55,.16)}.dark{background:#111824;border:1px solid rgba(255,255,255,.12);color:white}.green{background:rgba(53,211,158,.1);border:1px solid rgba(53,211,158,.3);color:#8af0ce}.danger{background:rgba(255,115,115,.1);border:1px solid rgba(255,115,115,.3);color:#ffbaba}
+main{padding-top:74px}.hero{min-height:735px;display:grid;align-items:center;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}.eyebrow{display:inline-block;color:var(--gold2);font-size:12px;font-weight:900;letter-spacing:2px;border:1px solid var(--line);padding:7px 12px;border-radius:99px;background:rgba(212,175,55,.05)}h1{font-size:clamp(43px,6vw,75px);line-height:1;margin:20px 0}h1 span{color:var(--gold2)}.hero p{color:var(--muted);font-size:18px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}
+.scene{height:460px;display:grid;place-items:center;position:relative;perspective:900px}.ring{position:absolute;border:1px solid var(--line);border-radius:50%;animation:spin 14s linear infinite}.r1{width:350px;height:350px;transform:rotateX(65deg)}.r2{width:270px;height:270px;transform:rotateY(65deg);animation-direction:reverse;animation-duration:10s}.cube{width:165px;height:165px;border:1px solid var(--gold);transform:rotateX(55deg) rotateZ(45deg);box-shadow:0 0 90px rgba(212,175,55,.17);animation:float 5s ease-in-out infinite;display:grid;place-items:center}.cube span{transform:rotate(-45deg);font-size:66px;color:var(--gold2)}
+section{padding:90px 0}.head{text-align:center;max-width:820px;margin:0 auto 44px}.head small{color:var(--gold2);font-weight:900;letter-spacing:2px}.head h2{font-size:42px;margin:8px 0}.head p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:rgba(14,21,32,.88);border:1px solid var(--line);border-radius:20px;padding:27px;box-shadow:var(--shadow);transition:.3s}.card:hover{transform:translateY(-6px);border-color:rgba(212,175,55,.62)}.icon{font-size:35px;color:var(--gold2)}.card p,.card li{color:var(--muted)}
+.timeline{max-width:900px;margin:auto;position:relative}.timeline:before{content:"";position:absolute;left:22px;top:0;bottom:0;width:1px;background:var(--line)}.event{position:relative;padding:0 0 28px 60px}.dot{position:absolute;left:12px;top:4px;width:21px;height:21px;border-radius:50%;background:var(--gold);box-shadow:0 0 20px rgba(212,175,55,.4)}.event h3{color:var(--gold2);margin:0}.event p{color:var(--muted)}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.panel{background:var(--panel);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);overflow:hidden}.panel-head{padding:23px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;align-items:center}.panel-body{padding:25px}
+.map{height:315px;border:1px solid var(--line);border-radius:20px;position:relative;overflow:hidden;background:radial-gradient(circle at 20% 45%,rgba(212,175,55,.2),transparent 2%),radial-gradient(circle at 42% 34%,rgba(212,175,55,.18),transparent 2%),radial-gradient(circle at 59% 48%,rgba(212,175,55,.17),transparent 2%),radial-gradient(circle at 77% 38%,rgba(212,175,55,.2),transparent 2%),linear-gradient(145deg,#0c131e,#06090e)}.map:after{content:"WORLDWIDE";position:absolute;inset:0;display:grid;place-items:center;color:rgba(212,175,55,.06);font-size:60px;font-weight:900;letter-spacing:10px}.pin{position:absolute;width:9px;height:9px;background:var(--gold2);border-radius:50%;box-shadow:0 0 18px var(--gold2);animation:pulse 2s infinite;z-index:2}
+.form{max-width:900px;margin:auto;background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:30px;box-shadow:var(--shadow)}.grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.full{grid-column:1/-1}label{display:block;font-size:13px;margin-bottom:6px;color:#e0e3e9}input,select,textarea{width:100%;background:#090e16;color:white;border:1px solid #2c3545;border-radius:9px;padding:12px;outline:none}input:focus,select:focus,textarea:focus{border-color:var(--gold)}textarea{min-height:120px}.check{display:flex;gap:8px;align-items:flex-start;color:var(--muted);font-size:13px;margin:17px 0}.check input{width:auto;margin-top:4px}.notice{padding:15px;border:1px solid var(--line);background:rgba(212,175,55,.05);border-radius:12px;color:#d9d2bc;margin:18px 0}.warning{border-color:rgba(255,115,115,.35);background:rgba(255,115,115,.05);color:#ffc3c3}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.step{padding:22px 14px;text-align:center;background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:16px}.num{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--gold);color:#111;font-weight:900;margin:auto}.step h4{margin:10px 0 4px}.step p{font-size:12px;color:var(--muted)}
+.dashboard{display:none}.dashboard.show{display:block}.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.kpi{min-height:135px;padding:20px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.012));transition:.35s;transform-style:preserve-3d}.kpi:hover{transform:translateY(-7px) rotateX(4deg) rotateY(-4deg)}.kpi strong{font-size:33px;color:var(--gold2);display:block}.kpi small{color:var(--muted)}.progress{height:12px;border-radius:99px;background:#080d15;border:1px solid #273143;overflow:hidden}.progress span{display:block;height:100%;width:62%;background:linear-gradient(90deg,#a97e16,var(--gold2));box-shadow:0 0 20px rgba(212,175,55,.35)}
+table{width:100%;border-collapse:collapse}th,td{padding:13px;text-align:left;border-bottom:1px solid rgba(255,255,255,.07);font-size:13px}th{color:var(--gold2);font-size:11px;text-transform:uppercase}td{color:#c8ccd4}.status{display:inline-block;padding:4px 8px;border-radius:99px;font-size:11px}.pending{background:rgba(212,175,55,.12);color:var(--gold2)}.approved{background:rgba(53,211,158,.12);color:#83eecb}
+.faq{max-width:900px;margin:auto}.faq details{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin:10px 0;padding:17px 20px}.faq summary{font-weight:800;color:var(--gold2);cursor:pointer}.faq p{color:var(--muted)}
+footer{padding:55px 0;border-top:1px solid rgba(255,255,255,.07);color:var(--muted);text-align:center}.disclaimer{max-width:900px;margin:15px auto;font-size:12px}
+.modal{display:none;position:fixed;inset:0;z-index:3000;background:rgba(0,0,0,.78);backdrop-filter:blur(9px);padding:20px;align-items:center;justify-content:center}.modal.show{display:flex}.modalbox{width:min(570px,100%);background:#0d131d;border:1px solid var(--line);border-radius:20px;padding:28px;position:relative;max-height:90vh;overflow:auto}.close{position:absolute;right:15px;top:10px;background:none;border:0;color:#aaa;font-size:28px}.auth{display:grid;gap:13px}.toast{position:fixed;bottom:20px;right:20px;z-index:4000;background:#121a27;border:1px solid var(--line);padding:14px 18px;border-radius:11px;box-shadow:var(--shadow);transform:translateY(120px);opacity:0;transition:.3s}.toast.show{transform:none;opacity:1}.hidden{display:none!important}
+@keyframes spin{to{transform:rotateX(65deg) rotateZ(360deg)}}@keyframes float{50%{transform:rotateX(55deg) rotateZ(45deg) translateY(-18px)}}@keyframes pulse{50%{transform:scale(1.8);opacity:.5}}
+@media(max-width:900px){.hero-grid,.info-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.links,.navbtns{display:none}.menu{display:block}.kpis{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.cards,.grid,.kpis,.steps{grid-template-columns:1fr}.hero{padding:55px 0}.scene{height:330px}.r1{width:250px;height:250px}.r2{width:190px;height:190px}.cube{width:120px;height:120px}.head h2{font-size:33px}table{display:block;overflow:auto;white-space:nowrap}}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="#home"><span class="mark">∴</span><span>Join Freemason Membership Today</span></a>
+<nav class="links"><a href="#about">About</a><a href="#history">History</a><a href="#values">Values</a><a href="#process">Process</a><a href="#apply">Apply</a><a href="#faq">FAQ</a></nav>
+<div class="navbtns"><button class="btn dark" onclick="openLogin()">Member Login</button><a class="btn gold" href="#apply">Apply Now</a></div>
+<button class="menu" onclick="document.getElementById('mobile').classList.toggle('hidden')">☰</button>
+</div>
+<div id="mobile" class="hidden" style="background:#080c13;padding:15px 5%;border-top:1px solid var(--line)">
+<a href="#about" style="display:block;padding:9px">About</a><a href="#history" style="display:block;padding:9px">History</a><a href="#values" style="display:block;padding:9px">Values</a><a href="#process" style="display:block;padding:9px">Process</a><a href="#apply" style="display:block;padding:9px">Apply</a><a href="#faq" style="display:block;padding:9px">FAQ</a>
+</div>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="container hero-grid">
+<div>
+<span class="eyebrow">FREEMASONRY • MEMBERSHIP • SERVICE</span>
+<h1>Join <span>Freemason</span> Membership Today</h1>
+<p>A serious, modern membership portal for people who want to learn about Freemasonry, register their interest and begin contact with an authorized Lodge or Grand Lodge.</p>
+<div class="actions"><a class="btn gold" href="#apply">Begin Membership Enquiry</a><a class="btn dark" href="#history">Explore Freemasonry</a></div>
+<div class="notice"><strong>Authorization:</strong> A website should only represent itself as an official Masonic membership service when the relevant Grand Lodge or Lodge has formally authorized it. This template is designed to be connected to such an organization.</div>
+</div>
+<div class="scene"><div class="ring r1"></div><div class="ring r2"></div><div class="cube"><span>∴</span></div></div>
+</div>
+</section>
+
+<section id="about">
+<div class="container"><div class="head"><small>ABOUT FREEMASONRY</small><h2>A Historic Fraternal Institution</h2><p>Freemasonry has roots associated with medieval stonemasonry and has developed into a network of independent Masonic jurisdictions and Lodges.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">⚒</div><h3>Heritage</h3><p>Modern Freemasonry draws on symbols, traditions and ceremonies associated with the stonemasons of the medieval period.</p></div>
+<div class="card"><div class="icon">∴</div><h3>Brotherhood</h3><p>Lodges provide opportunities for fellowship, friendship, reflection and personal development.</p></div>
+<div class="card"><div class="icon">✦</div><h3>Community Service</h3><p>Charitable giving, volunteering and support for communities are important activities in many Masonic jurisdictions.</p></div>
+</div></div>
+</section>
+
+<section id="history">
+<div class="container"><div class="head"><small>HISTORY</small><h2>Freemasonry Through Time</h2><p>Selected historical milestones; dates and institutional histories vary by jurisdiction.</p></div>
+<div class="timeline">
+<div class="event"><span class="dot"></span><h3>Medieval roots</h3><p>Traditions of operative stonemasons contributed symbols and practices that later became associated with speculative Freemasonry.</p></div>
+<div class="event"><span class="dot"></span><h3>1717 — London</h3><p>Four London Lodges met on 24 June 1717 and formed the first Grand Lodge, a landmark in the development of organized modern Freemasonry.</p></div>
+<div class="event"><span class="dot"></span><h3>1723 — Constitutions</h3><p>James Anderson's Constitutions of the Free-Masons was published, becoming an influential early Masonic constitutional text.</p></div>
+<div class="event"><span class="dot"></span><h3>1813 — United Grand Lodge of England</h3><p>The two principal English Grand Lodges united to form the United Grand Lodge of England.</p></div>
+<div class="event"><span class="dot"></span><h3>Today</h3><p>Freemasonry operates through numerous independent Grand Lodges, Districts, Provinces and local Lodges around the world.</p></div>
+</div></div>
+</section>
+
+<section id="values">
+<div class="container"><div class="head"><small>PRINCIPLES</small><h2>Integrity • Friendship • Respect • Service</h2><p>These four values are prominently described by the United Grand Lodge of England as guiding principles.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">◆</div><h3>Integrity</h3><p>Honesty, trustworthiness and dependable conduct.</p></div>
+<div class="card"><div class="icon">◇</div><h3>Friendship</h3><p>Building lasting relationships through fellowship.</p></div>
+<div class="card"><div class="icon">◈</div><h3>Respect</h3><p>Respect for people, different backgrounds and beliefs.</p></div>
+<div class="card"><div class="icon">✦</div><h3>Service</h3><p>Supporting charitable and community activities.</p></div>
+<div class="card"><div class="icon">⚖</div><h3>Personal Development</h3><p>Encouraging reflection, responsibility and character development.</p></div>
+<div class="card"><div class="icon">📚</div><h3>Education</h3><p>Exploring Masonic history, symbolism, architecture and social history.</p></div>
+</div></div>
+</section>
+
+<section>
+<div class="container"><div class="head"><small>WORLDWIDE</small><h2>A Network of Masonic Jurisdictions</h2><p>There is no single worldwide Grand Lodge controlling every Masonic organization. Recognition and membership rules depend on jurisdiction.</p></div>
+<div class="info-grid">
+<div class="panel"><div class="panel-head"><h3>How membership is normally approached</h3></div><div class="panel-body"><ol style="color:var(--muted);padding-left:22px"><li>Register interest with the relevant recognized organization.</li><li>Identify a suitable local Lodge or Masonic area.</li><li>Provide the requested personal details.</li><li>A local representative contacts the applicant.</li><li>The organization's own membership process determines eligibility and admission.</li></ol></div></div>
+<div class="map"><span class="pin" style="left:21%;top:44%"></span><span class="pin" style="left:42%;top:34%"></span><span class="pin" style="left:59%;top:49%"></span><span class="pin" style="left:76%;top:38%"></span><span class="pin" style="left:83%;top:62%"></span></div>
+</div></div>
+</section>
+
+<section id="process">
+<div class="container"><div class="head"><small>MEMBERSHIP JOURNEY</small><h2>From Enquiry to Lodge Contact</h2><p>A serious membership system should keep applicants informed at every stage.</p></div>
+<div class="steps">
+<div class="step"><div class="num">1</div><h4>Register</h4><p>Create an applicant account.</p></div><div class="step"><div class="num">2</div><h4>Apply</h4><p>Submit your membership enquiry.</p></div><div class="step"><div class="num">3</div><h4>Review</h4><p>Authorized officers review the request.</p></div><div class="step"><div class="num">4</div><h4>Contact</h4><p>A Lodge representative contacts you.</p></div><div class="step"><div class="num">5</div><h4>Decision</h4><p>The relevant jurisdiction completes its own process.</p></div>
+</div></div>
+</section>
+
+<section id="apply">
+<div class="container"><div class="head"><small>START YOUR JOURNEY</small><h2>Membership Enquiry</h2><p>Submit your details so an authorized organization can contact you.</p></div>
+<div class="form">
+<form id="applyForm">
+<div class="grid">
+<div><label>First name</label><input id="first" required></div><div><label>Last name</label><input id="last" required></div>
+<div><label>Email</label><input id="email" type="email" required></div><div><label>Phone</label><input id="phone" required></div>
+<div><label>Country</label><input id="country" required></div><div><label>City / region</label><input id="city" required></div>
+<div><label>Preferred Lodge / jurisdiction</label><input id="lodge" placeholder="If known"></div><div><label>Age</label><input id="age" type="number" min="18" required></div>
+<div class="full"><label>Why are you interested in Freemasonry?</label><textarea id="reason" required></textarea></div>
+</div>
+<div class="notice"><strong>Before paying any fee:</strong> confirm the Lodge/Grand Lodge identity, jurisdiction and official payment instructions independently. A website should never ask applicants to pay into a personal account or an unverified payment channel.</div>
+<label class="check"><input type="checkbox" required><span>I confirm that the information is accurate and understand that this enquiry is not automatic membership.</span></label>
+<button class="btn gold" type="submit">Submit Membership Enquiry</button>
+</form>
+</div></div>
+</section>
+
+<section id="member">
+<div class="container"><div class="head"><small>APPLICANT PORTAL</small><h2>Membership Dashboard</h2><p>After backend integration, applicants can securely track their own application here.</p></div>
+<div class="panel"><div class="panel-head"><div><h3 id="appName">Applicant Dashboard</h3><small style="color:var(--muted)">Reference: <span id="ref">Not submitted</span></small></div><span class="status pending" id="appStatus">Not Started</span></div>
+<div class="panel-body"><div class="kpis"><div class="kpi"><small>PROGRESS</small><strong id="pct">0%</strong></div><div class="kpi"><small>APPLICATION</small><strong id="ref2">—</strong></div><div class="kpi"><small>DOCUMENTS</small><strong>0/4</strong></div><div class="kpi"><small>INTERVIEW</small><strong>—</strong></div></div><div style="margin-top:20px" class="progress"><span id="bar" style="width:0%"></span></div></div></div>
+</div>
+</section>
+
+<section id="faq">
+<div class="container"><div class="head"><small>FAQ</small><h2>Frequently Asked Questions</h2></div><div class="faq">
+<details open><summary>Is this website itself a Grand Lodge?</summary><p>No. A genuine deployment must be owned and authorized by the specific Masonic organization represented. This distinction protects applicants from impersonation and payment fraud.</p></details>
+<details><summary>Does submitting an application make me a Freemason?</summary><p>No. An enquiry is only the beginning of the process. Membership is determined by the relevant Masonic jurisdiction and Lodge.</p></details>
+<details><summary>Are there membership fees?</summary><p>Fees and dues vary between jurisdictions and Lodges. Applicants should obtain the official fee schedule and payment instructions directly from the recognized organization.</p></details>
+<details><summary>Can women join Freemasonry?</summary><p>It depends on the organization. Some jurisdictions operate male-only Lodges while separate women-only and mixed organizations also exist.</p></details>
+</div></div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+<button class="btn dark" onclick="openAdmin()">Authorized Administration</button>
+<p class="disclaimer">For a real deployment, connect this frontend to a secure backend with server-side authentication, hashed passwords, MFA, database storage, HTTPS, CSRF protection, rate limiting, audit logs, privacy controls and an approved payment provider. Never place administrator passwords or payment secrets in index.html.</p>
+<p>© 2026 Join Freemason Membership Today</p>
+</div>
+</footer>
+
+<div class="modal" id="modal"><div class="modalbox"><button class="close" onclick="closeModal()">×</button><div id="modalBody"></div></div></div>
+<div class="toast" id="toast"></div>
+
+<script>
+const applicants=[];
+function showModal(html){document.getElementById('modalBody').innerHTML=html;document.getElementById('modal').classList.add('show')}
+function closeModal(){document.getElementById('modal').classList.remove('show')}
+document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal()});
+function openLogin(){showModal(`<h2>Member Login</h2><p style="color:var(--muted)">Secure member authentication must be connected to a server-side account system.</p><form class="auth" onsubmit="event.preventDefault();toast('Connect this form to the secure membership backend.');closeModal()"><input type="email" placeholder="Email address" required><input type="password" placeholder="Password" required><button class="btn gold">Sign In</button></form>`)}
+function openAdmin(){showModal(`<h2>Authorized Administration</h2><p style="color:var(--muted)">Private Grand Lodge administration should authenticate against a secure backend. Do not embed an administrator password in this HTML file.</p><form class="auth" onsubmit="event.preventDefault();toast('Administrator authentication requires the production backend.');closeModal()"><input type="email" placeholder="Authorized officer email" required><input type="password" placeholder="Password" required><button class="btn gold">Secure Sign In</button></form>`)}
+document.getElementById('applyForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const id='FMT-'+new Date().getFullYear()+'-'+String(Math.floor(100000+Math.random()*900000));
+ const name=document.getElementById('first').value+' '+document.getElementById('last').value;
+ applicants.unshift({id,name,email:document.getElementById('email').value,country:document.getElementById('country').value});
+ document.getElementById('appName').textContent=name+' — Applicant Dashboard';
+ document.getElementById('ref').textContent=id;document.getElementById('ref2').textContent=id;document.getElementById('appStatus').textContent='Submitted';document.getElementById('appStatus').className='status pending';document.getElementById('pct').textContent='25%';document.getElementById('bar').style.width='25%';
+ toast('Application enquiry submitted. Reference: '+id);
+ document.getElementById('member').scrollIntoView({behavior:'smooth'});e.target.reset();
+});
+function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3500)}
+</script>
+</body>
+</html>
