@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Freemason Kenya Portal — learn about Freemasonry, submit a membership enquiry and securely track your application in Kenya.">
+<meta name="description" content="Explore Freemasonry in Kenya: history, principles, frequently asked questions and a transparent membership enquiry portal.">
 <meta name="theme-color" content="#080c13">
 <meta name="robots" content="index,follow">
 <meta property="og:title" content="Freemason Kenya Portal">
 <meta property="og:description" content="Freemasonry information and membership enquiries in Kenya.">
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="icon" href="/icon.svg" type="image/svg+xml">
-<title>Freemason Kenya Portal | Membership Enquiries</title>
+<title>Freemasonry Kenya | History, Principles & Membership Enquiries</title>
 <style>
 :root{--bg:#05070b;--panel:#0e1520;--panel2:#141d2a;--gold:#d4af37;--gold2:#f4d56c;--text:#f8f5ea;--muted:#a7afbc;--line:rgba(212,175,55,.25);--green:#35d39e;--red:#ff7373;--shadow:0 25px 70px rgba(0,0,0,.48)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 12% 0,rgba(212,175,55,.12),transparent 28%),radial-gradient(circle at 90% 18%,rgba(70,90,170,.13),transparent 30%),var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.55}a{text-decoration:none;color:inherit}button,input,select,textarea{font:inherit}button{cursor:pointer}
@@ -34,12 +34,47 @@ footer{padding:55px 0;border-top:1px solid rgba(255,255,255,.07);color:var(--mut
 @keyframes spin{to{transform:rotateX(65deg) rotateZ(360deg)}}@keyframes float{50%{transform:rotateX(55deg) rotateZ(45deg) translateY(-18px)}}@keyframes pulse{50%{transform:scale(1.8);opacity:.5}}
 @media(max-width:900px){.hero-grid,.info-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.links,.navbtns{display:none}.menu{display:block}.kpis{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.cards,.grid,.kpis,.steps{grid-template-columns:1fr}.hero{padding:55px 0}.scene{height:330px}.r1{width:250px;height:250px}.r2{width:190px;height:190px}.cube{width:120px;height:120px}.head h2{font-size:33px}table{display:block;overflow:auto;white-space:nowrap}}
+
+/* 2026 visual refresh */
+:root{--bg:#080b10;--panel:#101925;--panel2:#172333;--gold:#c7a45a;--gold2:#f0d89a;--text:#f7f4ed;--muted:#b1bac7;--line:rgba(210,179,111,.24)}
+body{background:radial-gradient(ellipse at 75% 8%,rgba(56,83,116,.22),transparent 34%),radial-gradient(ellipse at 10% 22%,rgba(176,137,65,.13),transparent 30%),#080b10}
+header{background:rgba(8,11,16,.92);border-bottom-color:rgba(240,216,154,.13)}
+.nav{height:82px}.brand{letter-spacing:.2px}.mark{background:linear-gradient(145deg,rgba(240,216,154,.15),rgba(199,164,90,.02));font-size:25px}
+.links{gap:24px}.links a{font-weight:650;transition:color .2s}
+main{padding-top:82px}.hero{min-height:760px;position:relative}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,11,16,.98) 0%,rgba(8,11,16,.88) 48%,rgba(8,11,16,.3) 100%),radial-gradient(ellipse at 82% 50%,rgba(196,158,82,.16),transparent 38%);pointer-events:none}
+.hero-grid{position:relative;z-index:1;gap:54px}
+h1{font-size:clamp(46px,6.2vw,82px);letter-spacing:-2.8px;line-height:.99;max-width:720px}
+.hero p{max-width:610px;font-size:18px;line-height:1.8;color:#c1c8d1}
+.eyebrow{background:rgba(199,164,90,.09);border-color:rgba(240,216,154,.32);letter-spacing:2.4px}
+.btn{border-radius:999px;padding:13px 21px}.gold{background:linear-gradient(135deg,#f0d89a,#b78a3c);box-shadow:0 12px 35px rgba(183,138,60,.2)}
+.dark{background:rgba(255,255,255,.045);border-color:rgba(255,255,255,.17)}
+.scene{height:500px}.ring{border-color:rgba(240,216,154,.3);box-shadow:0 0 70px rgba(199,164,90,.04) inset}.cube{border-radius:8px;background:linear-gradient(145deg,rgba(240,216,154,.08),rgba(255,255,255,.015));backdrop-filter:blur(3px)}
+section{padding:100px 0}.head{margin-bottom:50px}.head h2{font-size:clamp(32px,4vw,48px);letter-spacing:-1.3px}.head p{font-size:16px;line-height:1.8}
+.card{background:linear-gradient(145deg,rgba(20,31,45,.95),rgba(12,18,27,.94));border-color:rgba(240,216,154,.17);border-radius:22px;padding:30px;box-shadow:0 18px 55px rgba(0,0,0,.2)}
+.card:hover{transform:translateY(-7px);border-color:rgba(240,216,154,.48);box-shadow:0 24px 65px rgba(0,0,0,.32)}
+.card h3{font-size:20px;letter-spacing:-.3px}.card p{line-height:1.75}
+.icon{width:54px;height:54px;border:1px solid rgba(240,216,154,.24);border-radius:16px;display:grid;place-items:center;background:rgba(199,164,90,.08);font-size:27px}
+.panel,.form{background:linear-gradient(145deg,rgba(17,26,39,.98),rgba(10,16,24,.98));border-color:rgba(240,216,154,.2);border-radius:24px}
+.form{padding:clamp(22px,4vw,42px)}
+input,select,textarea{background:#0a111a;border-color:#354153;border-radius:12px;padding:14px}
+input:focus,select:focus,textarea:focus{border-color:#e2c27f;box-shadow:0 0 0 3px rgba(226,194,127,.1)}
+.notice{border-radius:14px;line-height:1.7}
+.steps .step{background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.015));border-color:rgba(240,216,154,.17);padding:24px 16px}
+.step h4{font-size:15px}.num{background:linear-gradient(145deg,#f0d89a,#b78a3c);box-shadow:0 8px 22px rgba(183,138,60,.2)}
+.faq details{background:linear-gradient(145deg,#121d2a,#0d141e);border-color:rgba(240,216,154,.17);padding:20px 22px}
+.faq summary{font-size:16px}.faq p{line-height:1.8}
+footer{background:rgba(0,0,0,.16);padding:65px 0}
+.disclaimer{line-height:1.8}
+@media(max-width:900px){.hero{min-height:auto;padding:75px 0 55px}.hero:before{background:radial-gradient(ellipse at 70% 25%,rgba(196,158,82,.12),transparent 48%)}.hero-grid{gap:15px}.scene{height:340px}}
+@media(max-width:600px){.nav{height:70px}.brand{font-size:13px}.mark{width:38px;height:38px}.hero{padding:52px 0 30px}h1{letter-spacing:-1.8px}.hero p{font-size:16px}.actions .btn{width:100%}section{padding:72px 0}.card{padding:24px}.head{margin-bottom:34px}}
+
 </style>
 </head>
 <body>
 <header>
 <div class="container nav">
-<a class="brand" href="#home"><span class="mark">∴</span><span>Freemason Kenya Portal</span></a>
+<a class="brand" href="#home"><span class="mark">∴</span><span>Freemasonry Kenya</span></a>
 <nav class="links"><a href="#about">About</a><a href="#history">History</a><a href="#values">Values</a><a href="#process">Process</a><a href="#apply">Apply</a><a href="#faq">FAQ</a></nav>
 <div class="navbtns"><button class="btn dark" onclick="openLogin()">Member Login</button><a class="btn gold" href="#apply">Apply Now</a></div>
 <button class="menu" onclick="document.getElementById('mobile').classList.toggle('hidden')">☰</button>
@@ -54,9 +89,9 @@ footer{padding:55px 0;border-top:1px solid rgba(255,255,255,.07);color:var(--mut
 <div class="container hero-grid">
 <div>
 <span class="eyebrow">FREEMASONRY • MEMBERSHIP • SERVICE</span>
-<h1>Join <span>Freemason</span> Membership Today</h1>
-<p>A serious, modern membership portal for people who want to learn about Freemasonry, register their interest and begin contact with an authorized Lodge or Grand Lodge.</p>
-<div class="actions"><a class="btn gold" href="#apply">Begin Membership Enquiry</a><a class="btn dark" href="#history">Explore Freemasonry</a></div>
+<h1>Discover the Craft. <span>Explore the Brotherhood.</span></h1>
+<p>An elegant starting point for learning about Freemasonry—its history, values, traditions and community work. Explore the information, understand how independent Lodges operate, and make an informed enquiry.</p>
+<div class="actions"><a class="btn gold" href="#apply">Explore Membership Enquiry</a><a class="btn dark" href="#history">Explore Freemasonry</a></div>
 <div class="notice"><strong>Authorization:</strong> A website should only represent itself as an official Masonic membership service when the relevant Grand Lodge or Lodge has formally authorized it. This template is designed to be connected to such an organization.</div>
 </div>
 <div class="scene"><div class="ring r1"></div><div class="ring r2"></div><div class="cube"><span>∴</span></div></div>
@@ -64,7 +99,7 @@ footer{padding:55px 0;border-top:1px solid rgba(255,255,255,.07);color:var(--mut
 </section>
 
 <section id="about">
-<div class="container"><div class="head"><small>ABOUT FREEMASONRY</small><h2>A Historic Fraternal Institution</h2><p>Freemasonry has roots associated with medieval stonemasonry and has developed into a network of independent Masonic jurisdictions and Lodges.</p></div>
+<div class="container"><div class="head"><small>ABOUT FREEMASONRY</small><h2>A Tradition of Learning, Fellowship & Service</h2><p>Freemasonry has roots associated with medieval stonemasonry and has developed into a network of independent Masonic jurisdictions and Lodges.</p></div>
 <div class="cards">
 <div class="card"><div class="icon">⚒</div><h3>Heritage</h3><p>Modern Freemasonry draws on symbols, traditions and ceremonies associated with the stonemasons of the medieval period.</p></div>
 <div class="card"><div class="icon">∴</div><h3>Brotherhood</h3><p>Lodges provide opportunities for fellowship, friendship, reflection and personal development.</p></div>
@@ -104,14 +139,14 @@ footer{padding:55px 0;border-top:1px solid rgba(255,255,255,.07);color:var(--mut
 </section>
 
 <section id="process">
-<div class="container"><div class="head"><small>MEMBERSHIP JOURNEY</small><h2>From Enquiry to Lodge Contact</h2><p>A serious membership system should keep applicants informed at every stage.</p></div>
+<div class="container"><div class="head"><small>MEMBERSHIP JOURNEY</small><h2>A Clear, Respectful Enquiry Process</h2><p>A serious membership system should keep applicants informed at every stage.</p></div>
 <div class="steps">
 <div class="step"><div class="num">1</div><h4>Register</h4><p>Create an applicant account.</p></div><div class="step"><div class="num">2</div><h4>Apply</h4><p>Submit your membership enquiry.</p></div><div class="step"><div class="num">3</div><h4>Review</h4><p>Authorized officers review the request.</p></div><div class="step"><div class="num">4</div><h4>Contact</h4><p>A Lodge representative contacts you.</p></div><div class="step"><div class="num">5</div><h4>Decision</h4><p>The relevant jurisdiction completes its own process.</p></div>
 </div></div>
 </section>
 
 <section id="apply">
-<div class="container"><div class="head"><small>START YOUR JOURNEY</small><h2>Membership Enquiry</h2><p>Submit your details so an authorized organization can contact you.</p></div>
+<div class="container"><div class="head"><small>START YOUR JOURNEY</small><h2>Make an Informed Enquiry</h2><p>Submit your details so an authorized organization can contact you.</p></div>
 <div class="form">
 <form id="applyForm">
 <div class="grid">
@@ -149,7 +184,7 @@ footer{padding:55px 0;border-top:1px solid rgba(255,255,255,.07);color:var(--mut
 <div class="container">
 <button class="btn dark" onclick="openAdmin()">Authorized Administration</button>
 <p class="disclaimer">For a real deployment, connect this frontend to a secure backend with server-side authentication, hashed passwords, MFA, database storage, HTTPS, CSRF protection, rate limiting, audit logs, privacy controls and an approved payment provider. Never place administrator passwords or payment secrets in index.html.</p>
-<p>© 2026 Freemason Kenya Portal</p>
+<p>© 2026 Freemasonry Kenya Information Portal</p>
 </div>
 </footer>
 
