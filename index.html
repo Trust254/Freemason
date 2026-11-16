@@ -3,8 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Join Freemason Membership Today — Freemasonry history, values, membership enquiries and application management.">
-<title>Join Freemason Membership Today</title>
+<meta name="description" content="Freemason Kenya Portal — learn about Freemasonry, submit a membership enquiry and securely track your application in Kenya.">
+<meta name="theme-color" content="#080c13">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="Freemason Kenya Portal">
+<meta property="og:description" content="Freemasonry information and membership enquiries in Kenya.">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<title>Freemason Kenya Portal | Membership Enquiries</title>
 <style>
 :root{--bg:#05070b;--panel:#0e1520;--panel2:#141d2a;--gold:#d4af37;--gold2:#f4d56c;--text:#f8f5ea;--muted:#a7afbc;--line:rgba(212,175,55,.25);--green:#35d39e;--red:#ff7373;--shadow:0 25px 70px rgba(0,0,0,.48)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 12% 0,rgba(212,175,55,.12),transparent 28%),radial-gradient(circle at 90% 18%,rgba(70,90,170,.13),transparent 30%),var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.55}a{text-decoration:none;color:inherit}button,input,select,textarea{font:inherit}button{cursor:pointer}
@@ -33,7 +39,7 @@ footer{padding:55px 0;border-top:1px solid rgba(255,255,255,.07);color:var(--mut
 <body>
 <header>
 <div class="container nav">
-<a class="brand" href="#home"><span class="mark">∴</span><span>Join Freemason Membership Today</span></a>
+<a class="brand" href="#home"><span class="mark">∴</span><span>Freemason Kenya Portal</span></a>
 <nav class="links"><a href="#about">About</a><a href="#history">History</a><a href="#values">Values</a><a href="#process">Process</a><a href="#apply">Apply</a><a href="#faq">FAQ</a></nav>
 <div class="navbtns"><button class="btn dark" onclick="openLogin()">Member Login</button><a class="btn gold" href="#apply">Apply Now</a></div>
 <button class="menu" onclick="document.getElementById('mobile').classList.toggle('hidden')">☰</button>
@@ -112,7 +118,7 @@ footer{padding:55px 0;border-top:1px solid rgba(255,255,255,.07);color:var(--mut
 <div><label>First name</label><input id="first" required></div><div><label>Last name</label><input id="last" required></div>
 <div><label>Email</label><input id="email" type="email" required></div><div><label>Phone</label><input id="phone" required></div>
 <div><label>Country</label><input id="country" required></div><div><label>City / region</label><input id="city" required></div>
-<div><label>Preferred Lodge / jurisdiction</label><input id="lodge" placeholder="If known"></div><div><label>Age</label><input id="age" type="number" min="18" required></div>
+<div><label>Preferred Lodge / jurisdiction</label><input id="lodge" placeholder="If known"></div><div><label>Age</label><input id="age" type="number" min="18" required></div><div><label>Create password</label><input id="accountPassword" type="password" minlength="8" autocomplete="new-password" placeholder="At least 8 characters" required></div>
 <div class="full"><label>Why are you interested in Freemasonry?</label><textarea id="reason" required></textarea></div>
 </div>
 <div class="notice"><strong>Before paying any fee:</strong> confirm the Lodge/Grand Lodge identity, jurisdiction and official payment instructions independently. A website should never ask applicants to pay into a personal account or an unverified payment channel.</div>
@@ -143,7 +149,7 @@ footer{padding:55px 0;border-top:1px solid rgba(255,255,255,.07);color:var(--mut
 <div class="container">
 <button class="btn dark" onclick="openAdmin()">Authorized Administration</button>
 <p class="disclaimer">For a real deployment, connect this frontend to a secure backend with server-side authentication, hashed passwords, MFA, database storage, HTTPS, CSRF protection, rate limiting, audit logs, privacy controls and an approved payment provider. Never place administrator passwords or payment secrets in index.html.</p>
-<p>© 2026 Join Freemason Membership Today</p>
+<p>© 2026 Freemason Kenya Portal</p>
 </div>
 </footer>
 
@@ -157,17 +163,51 @@ function closeModal(){document.getElementById('modal').classList.remove('show')}
 document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal()});
 function openLogin(){showModal(`<h2>Member Login</h2><p style="color:var(--muted)">Secure member authentication must be connected to a server-side account system.</p><form class="auth" onsubmit="event.preventDefault();toast('Connect this form to the secure membership backend.');closeModal()"><input type="email" placeholder="Email address" required><input type="password" placeholder="Password" required><button class="btn gold">Sign In</button></form>`)}
 function openAdmin(){showModal(`<h2>Authorized Administration</h2><p style="color:var(--muted)">Private Grand Lodge administration should authenticate against a secure backend. Do not embed an administrator password in this HTML file.</p><form class="auth" onsubmit="event.preventDefault();toast('Administrator authentication requires the production backend.');closeModal()"><input type="email" placeholder="Authorized officer email" required><input type="password" placeholder="Password" required><button class="btn gold">Secure Sign In</button></form>`)}
-document.getElementById('applyForm').addEventListener('submit',e=>{
- e.preventDefault();
- const id='FMT-'+new Date().getFullYear()+'-'+String(Math.floor(100000+Math.random()*900000));
- const name=document.getElementById('first').value+' '+document.getElementById('last').value;
- applicants.unshift({id,name,email:document.getElementById('email').value,country:document.getElementById('country').value});
- document.getElementById('appName').textContent=name+' — Applicant Dashboard';
- document.getElementById('ref').textContent=id;document.getElementById('ref2').textContent=id;document.getElementById('appStatus').textContent='Submitted';document.getElementById('appStatus').className='status pending';document.getElementById('pct').textContent='25%';document.getElementById('bar').style.width='25%';
- toast('Application enquiry submitted. Reference: '+id);
- document.getElementById('member').scrollIntoView({behavior:'smooth'});e.target.reset();
-});
+
 function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3500)}
+</script>
+
+<script type="module">
+import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm";
+const supabase = createClient("https://vvmskvwpnvqvpnnhfpws.supabase.co","sb_publishable_Wmd2rXXBmEpK8ifxPqjKGw_O2hipYQw");
+const form=document.getElementById("applyForm");
+form.addEventListener("submit",async e=>{
+ e.preventDefault();
+ const submit=form.querySelector('button[type="submit"]');
+ submit.disabled=true; submit.textContent="Submitting securely…";
+ try {
+  const email=document.getElementById("email").value.trim();
+  const password=document.getElementById("accountPassword").value;
+  const {data:authData,error:authError}=await supabase.auth.signUp({email,password,options:{emailRedirectTo:window.location.origin}});
+  if(authError) throw authError;
+  if(!authData.session) {
+   toast("Account created. Please verify your email, then sign in to submit your application.");
+   return;
+  }
+  const id="FMK-"+new Date().getFullYear()+"-"+crypto.randomUUID().slice(0,8).toUpperCase();
+  const payload={
+   user_id:authData.user.id,reference_code:id,
+   first_name:document.getElementById("first").value.trim(),
+   last_name:document.getElementById("last").value.trim(),
+   email,phone:document.getElementById("phone").value.trim(),
+   country:document.getElementById("country").value.trim(),
+   city:document.getElementById("city").value.trim(),
+   preferred_lodge:document.getElementById("lodge").value.trim(),
+   age:Number(document.getElementById("age").value),
+   reason:document.getElementById("reason").value.trim()
+  };
+  const {error}=await supabase.from("membership_applications").insert(payload);
+  if(error) throw error;
+  document.getElementById("appName").textContent=payload.first_name+" "+payload.last_name+" — Applicant Dashboard";
+  document.getElementById("ref").textContent=id;document.getElementById("ref2").textContent=id;
+  document.getElementById("appStatus").textContent="Submitted";
+  document.getElementById("pct").textContent="25%";document.getElementById("bar").style.width="25%";
+  toast("Application saved securely. Reference: "+id);
+  document.getElementById("member").scrollIntoView({behavior:"smooth"});form.reset();
+ } catch(err) { toast(err.message||"Unable to submit. Please try again."); }
+ finally {submit.disabled=false;submit.textContent="Submit Membership Enquiry";}
+});
+if("serviceWorker" in navigator) window.addEventListener("load",()=>navigator.serviceWorker.register("/sw.js").catch(()=>{}));
 </script>
 </body>
 </html>
