@@ -209,5 +209,27 @@ form.addEventListener("submit",async e=>{
 });
 if("serviceWorker" in navigator) window.addEventListener("load",()=>navigator.serviceWorker.register("/sw.js").catch(()=>{}));
 </script>
+<script type="module">
+import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm";
+const sb=createClient("https://vvmskvwpnvqvpnnhfpws.supabase.co","sb_publishable_Wmd2rXXBmEpK8ifxPqjKGw_O2hipYQw");
+window.openLogin=()=>{
+ showModal('<h2>Applicant Sign In</h2><form id="realLogin" class="auth"><input id="loginEmail" type="email" placeholder="Email address" required><input id="loginPassword" type="password" placeholder="Password" required><button class="btn gold">Sign In</button></form>');
+ document.getElementById("realLogin").addEventListener("submit",async e=>{
+  e.preventDefault();const b=e.target.querySelector("button");b.disabled=true;
+  const {data,error}=await sb.auth.signInWithPassword({email:document.getElementById("loginEmail").value,password:document.getElementById("loginPassword").value});
+  b.disabled=false;if(error){toast(error.message);return;}closeModal();await loadOwnApplication(data.user.id);
+ });
+};
+async function loadOwnApplication(userId){
+ const {data,error}=await sb.from("membership_applications").select("*").eq("user_id",userId).order("created_at",{ascending:false}).limit(1).maybeSingle();
+ if(error||!data)return;
+ document.getElementById("appName").textContent=data.first_name+" "+data.last_name+" — Applicant Dashboard";
+ document.getElementById("ref").textContent=data.reference_code;document.getElementById("ref2").textContent=data.reference_code;
+ document.getElementById("appStatus").textContent=data.status.replaceAll("_"," ");
+ const pct=data.status==="submitted"?25:data.status==="under_review"?50:data.status==="contacted"?75:100;
+ document.getElementById("pct").textContent=pct+"%";document.getElementById("bar").style.width=pct+"%";
+}
+const {data:{session}}=await sb.auth.getSession();if(session)await loadOwnApplication(session.user.id);
+</script>
 </body>
 </html>
